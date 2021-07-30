@@ -5,6 +5,7 @@ import (
 	"sort"
 )
 
+// Calculates the median of a list of numbers
 func median(numbers []float64) float64 {
 	// copy
 	myCopy := make([]float64, len(numbers))
