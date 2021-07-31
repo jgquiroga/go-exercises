@@ -154,3 +154,9 @@ Then, we need to call this line to update the references:
 go mod tidy
 ```
 
+To test, create a new {file-to-test}_test.go in the same module and the execute
+
+```go
+go test
+```
+
