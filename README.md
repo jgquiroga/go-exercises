@@ -139,3 +139,18 @@ numbers = make([]string, 3, 3)
 
     // The result is Default
 ```
+
+* Adding a new module
+
+It's the same. In the calling module, if we need to test an internal module, we have to add this line to replace:
+
+```go
+go mod edit -replace {modulename}=../{module-folder}
+```
+
+Then, we need to call this line to update the references:
+
+```go
+go mod tidy
+```
+
